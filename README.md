@@ -66,6 +66,10 @@ npm run test:e2e    # Playwright E2E tests (builds + previews the static site fi
 
 CI runs the E2E suite in the official Playwright container, with its image tag derived from the exact `@playwright/test` version in `package-lock.json` so the preinstalled browsers match the test runner.
 
+## Filtering the catalog
+
+The home page can filter the static game catalog by one or more categories and by publisher. Category selections are additive, a publisher selection narrows the same result set, and the two filter types are combined. The reset control restores the complete catalog.
+
 ## Linting
 
 The frontend uses ESLint to enforce code quality across TypeScript and Astro files. Run it with:
